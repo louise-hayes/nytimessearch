@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
 
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -34,7 +34,8 @@
 
         <div id="headerPanel" class="col-md-12">
             <div class="jumbotron">
-                    <i class="fa fa-newspaper-o" aria-hidden="true"> </i><h1 class="display-3 "> New York Times Search</h1>
+                <i class="fa fa-newspaper-o" aria-hidden="true"> </i>
+                <h1 class="display-3 "> New York Times Search</h1>
             </div>
         </div>
 
@@ -44,33 +45,31 @@
                 <div class="panel-body">
                     <form>
                         <div class="form-group">
-                            <label>Search Term:</label>
+                            <label>Search Term</label>
                             <input type="text" class="form-control " id="searchTerm" placeholder="Enter Search Criteria">
-                            <script type="text/javascript">
-                                console.log($("#searchTerm"));
-                            </script>
+
                         </div>
                         <div class="form-group">
-                            <label>Number of Records to Retrieve:</label>
-                            <input type="text" class="form-control" id="noToRetrieve" placeholder="Number of Records">
+                            <label>Number of Records to Retrieve</label>
+                            <input type="number" class="form-control" id="noToRetrieve" min=1 max=10 placeholder="Number of Records">
 
 
                         </div>
 
                         <div class="form-group">
-                            <label>Start Year (Optional):</label>
-                            <input type="text" class="form-control" id="startYear" placeholder="Start Year">
+                            <label>Start Year (Optional)</label>
+                            <input type="number" class="form-control" id="startYear" placeholder="Start Year">
 
 
                         </div>
                         <div class="form-group">
-                            <label>End Year (Optional):</label>
-                            <input type="text" class="form-control" id="endYear" placeholder="End Year">
+                            <label>End Year (Optional)</label>
+                            <input type="number" class="form-control" id="endYear" placeholder="End Year">
 
 
                         </div>
-                        <button type="Search" id="searchButton" class="btn btn-primary">Search</button>
-                        <button type="Clear Results" id="clearButton" class="btn btn-primary">Clear Results</button>
+                        <button id="searchButton" class="btn btn-primary">Search</button>
+                        <button type="reset" id="clearButton" class="btn btn-primary">Clear Results</button>
                 </div>
 
                 </form>
@@ -83,36 +82,14 @@
                     <h3 class="panel-title">Top Articles</h3>
                 </div>
                 <div class="panel-body">
+                    <div id="articleContent">
 
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- end of search panel -->
 
-
-
-
-        </div>
-        <!-- end search panel -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <script type="text/javascript" src="assets/js/logic.js"></script>
     </container>
 
 
