@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYTimes Search</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <container class="col-md-12">
+
+        <div id="headerPanel" class="col-md-12">
+            <div class="jumbotron">
+                    <i class="fa fa-newspaper-o" aria-hidden="true"> </i><h1 class="display-3 "> New York Times Search</h1>
+            </div>
+        </div>
+
+        <div id="searchPanel" class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">Search Parameters</div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Search Term:</label>
+                            <input type="text" class="form-control " id="searchTerm" placeholder="Enter Search Criteria">
+                            <script type="text/javascript">
+                                console.log($("#searchTerm"));
+                            </script>
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Records to Retrieve:</label>
+                            <input type="text" class="form-control" id="noToRetrieve" placeholder="Number of Records">
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>Start Year (Optional):</label>
+                            <input type="text" class="form-control" id="startYear" placeholder="Start Year">
+
+
+                        </div>
+                        <div class="form-group">
+                            <label>End Year (Optional):</label>
+                            <input type="text" class="form-control" id="endYear" placeholder="End Year">
+
+
+                        </div>
+                        <button type="Search" id="searchButton" class="btn btn-primary">Search</button>
+                        <button type="Clear Results" id="clearButton" class="btn btn-primary">Clear Results</button>
+                </div>
+
+                </form>
+
+
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Top Articles</h3>
+                </div>
+                <div class="panel-body">
+
+                </div>
+            </div>
+        </div>
+        <!-- end of search panel -->
+
+
+
+
+        </div>
+        <!-- end search panel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </container>
+
+
+</body>
+
+</html>
