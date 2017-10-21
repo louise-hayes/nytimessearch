@@ -36,6 +36,18 @@ function nytSearch() {
         method: 'GET',
     }).done(function (result) {
         console.log(result);
+
+        var articleObjects = result.docs;
+
+        for (var i = 0; i < array.length; i++) {
+            var element = array[i];
+            
+        }
+        
+        
+        
+        
+        
     }).fail(function (err) {
         throw err;
     });
